@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio | แฟ้มสะสมผลงาน</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background: #fff7fb;
+    color: #493747;
+}
+
+header {
+    background: #ffffff;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px #00000010;
+}
+
+.logo {
+    color: #d66b9d;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a {
+    text-decoration: none;
+    color: #493747;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #d66b9d;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 260px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    color: #c65388;
+}
+
+.hero-text h2 {
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+.hero-text p {
+    line-height: 1.9;
+    color: #806b79;
+}
+
+.profile {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid white;
+    box-shadow: 0 5px 25px #d66b9d40;
+}
+
+.btn {
+    display: inline-block;
+    background: #d66b9d;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 22px;
+}
+
+.btn:hover {
+    background: #b94c7f;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    color: #c65388;
+    margin-bottom: 35px;
+}
+
+.about {
+    background: white;
+    text-align: center;
+    line-height: 2;
+    border-radius: 25px;
+    padding: 40px;
+}
+
+.skills, .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 18px #00000008;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card h3 {
+    color: #c65388;
+    margin-bottom: 12px;
+}
+
+.project-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.contact {
+    background: #fce3ef;
+    text-align: center;
+    border-radius: 30px;
+    line-height: 2.5;
+}
+
+footer {
+    background: #493747;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+    nav a {
+        margin: 0 7px;
+        font-size: 12px;
+    }
+    .hero-text h1 {
+        font-size: 32px;
+    }
+    section {
+        padding: 50px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">My Portfolio.</div>
+    <nav>
+        <a href="#home">หน้าแรก</a>
+        <a href="#about">เกี่ยวกับฉัน</a>
+        <a href="#skills">ทักษะ</a>
+        <a href="#projects">ผลงาน</a>
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+</header>
+
+<!-- หน้าแรก -->
+<section class="hero" id="home">
+
+    <div class="hero-text">
+        <h1>HELLO!</h1>
+        <h2>ยินดีต้อนรับสู่ Portfolio ของฉัน</h2>
+        <p>
+            สวัสดีค่ะ ฉันชื่อ กันติชา<br>
+            นักเรียนแผนกเทคโนโลยีสารสนเทศ<br>
+            เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมประวัติ
+            ความสามารถ และผลงานของฉัน
+        </p>
+        <a href="#projects" class="btn">ดูผลงานของฉัน</a>
+    </div>
+
+    <!-- เปลี่ยน profile.jpg เป็นรูปของตัวเอง -->
+    <img src="profile.jpg" class="profile" alt="รูปโปรไฟล์">
+
+</section>
+
+<!-- เกี่ยวกับฉัน -->
+<section id="about">
+    <h2 class="heading">About Me</h2>
+    <div class="about">
+        <p>
+            สวัสดีค่ะ ฉันชื่อ กันติชา คำเมือง<br>
+            กำลังศึกษาอยู่ระดับ ปวช.2/1<br>
+            แผนกวิชาเทคโนโลยีสารสนเทศ<br>
+            มีความสนใจด้านการเขียนโปรแกรม
+            การออกแบบเว็บไซต์ และเทคโนโลยีใหม่ ๆ
+            พร้อมเรียนรู้และพัฒนาความสามารถของตนเองอยู่เสมอ
+        </p>
+    </div>
+</section>
+
+<!-- ทักษะ -->
+<section id="skills">
+    <h2 class="heading">My Skills</h2>
+
+    <div class="skills">
+        <div class="card">
+            <h3>💻 HTML</h3>
+            <p>การสร้างโครงสร้างเว็บไซต์</p>
+        </div>
+
+        <div class="card">
+            <h3>🎨 CSS</h3>
+            <p>การตกแต่งและออกแบบเว็บไซต์</p>
+        </div>
+
+        <div class="card">
+            <h3>🐘 PHP</h3>
+            <p>การเขียนโปรแกรมและจัดการข้อมูล</p>
+        </div>
+
+        <div class="card">
+            <h3>🗄️ Database</h3>
+            <p>การจัดการฐานข้อมูล MySQL</p>
+        </div>
+    </div>
+</section>
+
+<!-- ผลงาน -->
+<section id="projects">
+    <h2 class="heading">My Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <img src="project1.jpg" class="project-img" alt="ผลงานที่ 1">
+            <h3>เว็บไซต์ร้านเสื้อผ้า</h3>
+            <p>ผลงานการออกแบบเว็บไซต์ด้วย HTML และ CSS</p>
+        </div>
+
+        <div class="card">
+            <img src="project2.jpg" class="project-img" alt="ผลงานที่ 2">
+            <h3>ระบบร้านกาแฟ</h3>
+            <p>ผลงานวิเคราะห์และออกแบบระบบร้านกาแฟ</p>
+        </div>
+
+        <div class="card">
+            <img src="project3.jpg" class="project-img" alt="ผลงานที่ 3">
+            <h3>โปรเจกต์ Arduino</h3>
+            <p>ผลงานการทดลองใช้งานเซนเซอร์ DHT22</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ติดต่อ -->
+<section id="contact">
+    <div class="contact">
+        <h2 class="heading">Contact Me</h2>
+        <p>📧 Email: your@email.com</p>
+        <p>📱 Facebook: ชื่อ Facebook ของคุณ</p>
+        <p>📍 ที่อยู่: จังหวัดสิงห์บุรี</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My Portfolio | Created by Kanticha</p>
+</footer>
+
+</body>
+</html>
